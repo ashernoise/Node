@@ -1,0 +1,33 @@
+const Sequelize = require('sequelize')
+const sequelize = new zequelize ('teste','root', 'adm74568',{
+    host:"localhost",
+    dialect: 'mysql' 
+})
+
+sequelize.autenticate().then(function(){
+    console.log("Conectado com sucesso");
+}).catch(function(){
+    console.log("Falha ao se conectar"+ erro);
+})
+
+const sequelize = new zequelize('Banco de dados que deseja se conectar', 'Usuario do banco',
+'senha do banco',{em qual local o servidor esta hosteado})
+
+ dialect: 'mysql' - tipo de banco de dados que ira se conectar
+
+sequelize.autenticate() - valida se a conexão foi realizada com sucesso
+
+tratativa de conexão
+
+sequelize.autenticate().then(function(){
+    console.log("Conectado com sucesso");
+}).catch(function(erro){
+    console.log("Falha ao se conectar"+ erro);
+})
+
+then - sucesso
+catch - erro
+
+
+model - referencia da tabela dentrod o sequelize
+
